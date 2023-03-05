@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#333;
+    --secondary-text-color:#666;
+    --primary-bg-color:#047AED;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    line-height: 1.2;
+}
+
+h1{
+    color: var(--secondary-text-color);
+}
+.container{
+    max-width: 1020px;
+    padding: 0 2rem;
+    overflow: hidden;
+    margin: auto;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* color starting from here.......... */
+
+.top{
+    background-color: var(--primary-bg-color);
+}
+.heading-area{
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+ul.flex{
+    gap: 40px;
+}
+.logo{
+    position: relative;
+}
+.logo h1{
+    color: #fff;
+    font-weight:400;
+    position: relative;
+    transition: .9s ease-out;
+    cursor: pointer;
+    font-size: 3rem;
+   
+}
+
+.logo h1:hover{
+    transform: rotateX(360deg);
+    font-size: 4rem;
+    color: orangered;
+}/* 
+.logo h1:after{
+    position: absolute;
+    content: "";
+    left: 0;
+    width:0;
+    height:3px;
+    bottom: -3px;
+    background-color:var(--secondary-text-color);
+    transition: .3s ease-out;
+}
+ *//* 
+.logo h1:hover:after{
+    width: 100%;
+} */
+
+.main-manu ul a{
+    color: #fff;
+    position: relative;
+}
+.main-manu ul a:after{
+    position: absolute;
+    content: '';
+    height:3px;
+    left: 0;
+    width: 0;
+    bottom: -3px;
+    background-color:var(--secondary-text-color);
+    transition: .3s;
+}
+.main-manu ul a:hover:after{
+    width: 80%;
+}
+.hero{
+    width: 100%;
+    height: 400px;
+    background-color: var(--primary-bg-color);
+    color: #fff !important;
+    transform:skewY(-3deg);
+    position: absolute;
+}
+.showcase{
+    padding: 40px;
+    justify-content: space-between;
+    gap: 50px;
+}
+.form-area{
+    height: 350px;
+    width: 100%;
+    background-color: var(--secondary-text-color);
+    overflow: visible;
+
+}
